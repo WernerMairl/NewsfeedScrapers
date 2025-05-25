@@ -1,0 +1,15 @@
+{
+    "name": "NewsfeedScrapers DevContainer",
+    "image": "mcr.microsoft.com/devcontainers/dotnet:9.0",
+    "features": {},
+    "customizations": {
+        "vscode": {
+            "settings": {},
+            "extensions": [
+                "ms-dotnettools.csharp",
+                "ms-azuretools.vscode-docker"
+            ]
+        }
+    },
+    "postCreateCommand": "dotnet restore src/NewsfeedScrapers.sln"
+}
